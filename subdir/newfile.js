@@ -1,0 +1,1 @@
+console.writeline('this is some test javascript');
