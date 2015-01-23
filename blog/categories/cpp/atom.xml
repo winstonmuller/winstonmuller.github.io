@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cpp | Winston Muller]]></title>
   <link href="http://winstonmuller.github.io/blog/categories/cpp/atom.xml" rel="self"/>
   <link href="http://winstonmuller.github.io/"/>
-  <updated>2015-01-23T21:38:32+13:00</updated>
+  <updated>2015-01-23T21:41:39+13:00</updated>
   <id>http://winstonmuller.github.io/</id>
   <author>
     <name><![CDATA[Winston Muller]]></name>
@@ -18,9 +18,7 @@
     <link href="http://winstonmuller.github.io/blog/2015/01/01/cpp-begin/"/>
     <updated>2015-01-01T13:41:19+13:00</updated>
     <id>http://winstonmuller.github.io/blog/2015/01/01/cpp-begin</id>
-    <content type="html"><![CDATA[<h1>A Simple C++ Application</h1>
-
-<pre><code>#include &lt;iostream&gt;
+    <content type="html"><![CDATA[<pre><code>#include &lt;iostream&gt;
 
 int main()
 {
