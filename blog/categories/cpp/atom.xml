@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Winston Muller]]></title>
-  <link href="http://winstonmuller.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: cpp | Winston Muller]]></title>
+  <link href="http://winstonmuller.github.io/blog/categories/cpp/atom.xml" rel="self"/>
   <link href="http://winstonmuller.github.io/"/>
   <updated>2015-01-23T21:38:32+13:00</updated>
   <id>http://winstonmuller.github.io/</id>
@@ -14,26 +14,10 @@
 
   
   <entry>
-    
-    <title type="html"><![CDATA[.NET Collections]]></title>
-    <link href="http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections/"/>
-    
-    <updated>2015-01-12T20:52:32+13:00</updated>
-    <id>http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections</id>
-    
-    <content type="html"><![CDATA[
-]]></content>
-    
-  </entry>
-  
-  <entry>
-    
     <title type="html"><![CDATA[A Simple C++ Application]]></title>
     <link href="http://winstonmuller.github.io/blog/2015/01/01/cpp-begin/"/>
-    
     <updated>2015-01-01T13:41:19+13:00</updated>
     <id>http://winstonmuller.github.io/blog/2015/01/01/cpp-begin</id>
-    
     <content type="html"><![CDATA[<h1>A Simple C++ Application</h1>
 
 <pre><code>#include &lt;iostream&gt;
@@ -46,7 +30,6 @@ int main()
 }
 </code></pre>
 ]]></content>
-    
   </entry>
   
 </feed>
