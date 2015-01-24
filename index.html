@@ -9,8 +9,7 @@
   <meta name="author" content="Winston Muller">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="Usually, a program runs on the computer and takes data as its input, and returns data as output. For example, running a simple program to do addition &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +68,56 @@
   <header>
   
     
+      <h1 class="entry-title"><a href="/blog/2015/01/24/what-is-a-compiler/">What Is a Compiler?</a></h1>
+      
+      
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-24T15:08:34+13:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Usually, a program runs on the computer and takes data as its input, and returns data as output.</p>
+
+<p>For example, running a simple program to do addition, the input would be the two addends and the result would be the sum.</p>
+
+<h1>Compiler</h1>
+
+<p>A compiler is a peculiar program, in that the data is another program&rsquo;s source code. A compiler takes another program&rsquo;s source code as its input and returns an executable program as its output. In the case of a language such as Java which runs on the Java Virtual Machine, and not directly on the operating system itself, the output would be a form of bytecode.</p>
+
+<p>In the case of a language such as C++, the compiler usually takes the source code and returns the executable program itself, or object code. In this sense the word code is used to refer to a part of a program, not source code. However, there is still another step that takes place after this.</p>
+
+<h1>Linker</h1>
+
+<p>A program is almost always written on top of some sort of library. This library has some basic functionality such as input/output, the handling of streams, arrays etc. The object code for the program needs to be hooked up to this library code, otherwise it won&rsquo;t work at runtime. This is where the linker comes in. A linked combines the library object code with the object code from the compiled program.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+  
+    
       <h1 class="entry-title"><a href="/blog/2015/01/12/dot-net-collections/">.NET Collections</a></h1>
       
       
@@ -101,52 +150,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-  
-    
-      <h1 class="entry-title"><a href="/blog/2015/01/01/cpp-begin/">A Simple C++ Application</a></h1>
-      
-      
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-01-01T13:41:19+13:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><pre><code>#include &lt;iostream&gt;
-
-int main()
-{
-    std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
-
-    return 0;
-}
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -160,11 +163,11 @@ int main()
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/01/12/dot-net-collections/">.NET Collections</a>
+        <a href="/blog/2015/01/24/what-is-a-compiler/">What is a Compiler?</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2015/01/01/cpp-begin/">A Simple C++ Application</a>
+        <a href="/blog/2015/01/12/dot-net-collections/">.NET Collections</a>
       </li>
     
   </ul>

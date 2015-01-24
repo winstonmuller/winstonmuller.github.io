@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Winston Muller</title>
+  <title>What is a Compiler? - Winston Muller</title>
   <meta name="author" content="Winston Muller">
 
   
-  <meta name="description" content=" Blog Archive 2015 What is a Compiler?
-Jan 24 2015 .NET Collections
-Jan 12 2015 Recent Posts What is a Compiler? .NET Collections ">
+  <meta name="description" content="Usually, a program runs on the computer and takes data as its input, and returns data as output. For example, running a simple program to do addition &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Jan 12 2015 Recent Posts What is a Compiler? .NET Collections ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://winstonmuller.github.io/blog/archives">
+  <link rel="canonical" href="http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Winston Muller" type="application/atom+xml">
@@ -62,39 +60,98 @@ Jan 12 2015 Recent Posts What is a Compiler? .NET Collections ">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+  
+    
+      <h1 class="entry-title">What Is a Compiler?</h1>
+    
+  
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-24T15:08:34+13:00" pubdate data-updated="true"></time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>Usually, a program runs on the computer and takes data as its input, and returns data as output.</p>
 
-  
-  <h2>2015</h2>
+<p>For example, running a simple program to do addition, the input would be the two addends and the result would be the sum.</p>
 
-<article>
-  
-<h1><a href="/blog/2015/01/24/what-is-a-compiler/">What is a Compiler?</a></h1>
-<time datetime="2015-01-24T15:08:34+13:00" pubdate><span class='month'>Jan</span> <span class='day'>24</span> <span class='year'>2015</span></time>
+<h1>Compiler</h1>
 
-</article>
+<p>A compiler is a peculiar program, in that the data is another program&rsquo;s source code. A compiler takes another program&rsquo;s source code as its input and returns an executable program as its output. In the case of a language such as Java which runs on the Java Virtual Machine, and not directly on the operating system itself, the output would be a form of bytecode.</p>
 
+<p>In the case of a language such as C++, the compiler usually takes the source code and returns the executable program itself, or object code. In this sense the word code is used to refer to a part of a program, not source code. However, there is still another step that takes place after this.</p>
 
+<h1>Linker</h1>
 
-<article>
-  
-<h1><a href="/blog/2015/01/12/dot-net-collections/">.NET Collections</a></h1>
-<time datetime="2015-01-12T20:52:32+13:00" pubdate><span class='month'>Jan</span> <span class='day'>12</span> <span class='year'>2015</span></time>
-
-</article>
-
+<p>A program is almost always written on top of some sort of library. This library has some basic functionality such as input/output, the handling of streams, arrays etc. The object code for the program needs to be hooked up to this library code, otherwise it won&rsquo;t work at runtime. This is where the linker comes in. A linked combines the library object code with the object code from the compiled program.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Winston Muller</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-24T15:08:34+13:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cpp/'>cpp</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler/" data-via="" data-counturl="http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/01/12/dot-net-collections/" title="Previous Post: .NET Collections">&laquo; .NET Collections</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

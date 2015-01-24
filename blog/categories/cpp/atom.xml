@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cpp | Winston Muller]]></title>
   <link href="http://winstonmuller.github.io/blog/categories/cpp/atom.xml" rel="self"/>
   <link href="http://winstonmuller.github.io/"/>
-  <updated>2015-01-23T21:50:21+13:00</updated>
+  <updated>2015-01-24T21:45:06+13:00</updated>
   <id>http://winstonmuller.github.io/</id>
   <author>
     <name><![CDATA[Winston Muller]]></name>
@@ -14,19 +14,23 @@
 
   
   <entry>
-    <title type="html"><![CDATA[A Simple C++ Application]]></title>
-    <link href="http://winstonmuller.github.io/blog/2015/01/01/cpp-begin/"/>
-    <updated>2015-01-01T13:41:19+13:00</updated>
-    <id>http://winstonmuller.github.io/blog/2015/01/01/cpp-begin</id>
-    <content type="html"><![CDATA[<pre><code>#include &lt;iostream&gt;
+    <title type="html"><![CDATA[What is a Compiler?]]></title>
+    <link href="http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler/"/>
+    <updated>2015-01-24T15:08:34+13:00</updated>
+    <id>http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler</id>
+    <content type="html"><![CDATA[<p>Usually, a program runs on the computer and takes data as its input, and returns data as output.</p>
 
-int main()
-{
-    std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+<p>For example, running a simple program to do addition, the input would be the two addends and the result would be the sum.</p>
 
-    return 0;
-}
-</code></pre>
+<h1>Compiler</h1>
+
+<p>A compiler is a peculiar program, in that the data is another program&rsquo;s source code. A compiler takes another program&rsquo;s source code as its input and returns an executable program as its output. In the case of a language such as Java which runs on the Java Virtual Machine, and not directly on the operating system itself, the output would be a form of bytecode.</p>
+
+<p>In the case of a language such as C++, the compiler usually takes the source code and returns the executable program itself, or object code. In this sense the word code is used to refer to a part of a program, not source code. However, there is still another step that takes place after this.</p>
+
+<h1>Linker</h1>
+
+<p>A program is almost always written on top of some sort of library. This library has some basic functionality such as input/output, the handling of streams, arrays etc. The object code for the program needs to be hooked up to this library code, otherwise it won&rsquo;t work at runtime. This is where the linker comes in. A linked combines the library object code with the object code from the compiled program.</p>
 ]]></content>
   </entry>
   
