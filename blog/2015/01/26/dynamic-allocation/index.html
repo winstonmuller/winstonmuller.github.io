@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>.NET Collections - Winston Muller</title>
+  <title>Dynamic Allocation - Winston Muller</title>
   <meta name="author" content="Winston Muller">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="Objects have scope, and go away when execution reaches the end of the scope. What if other code needed that object still? Like a UI element ( a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections">
+  <link rel="canonical" href="http://winstonmuller.github.io/blog/2015/01/26/dynamic-allocation">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Winston Muller" type="application/atom+xml">
@@ -66,7 +65,7 @@
   <header>
   
     
-      <h1 class="entry-title">.NET Collections</h1>
+      <h1 class="entry-title">Dynamic Allocation</h1>
     
   
     
@@ -83,14 +82,40 @@
   
 
 
-<time datetime="2015-01-12T20:52:32+13:00" pubdate data-updated="true"></time>
+<time datetime="2015-01-26T22:09:17+13:00" pubdate data-updated="true"></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>Objects have scope, and go away when execution reaches the end of the scope.</p>
+
+<p>What if other code needed that object still? Like a UI element ( a window, an open file etc. we don&rsquo;t want it to go away).</p>
+
+<p>Cpp provides a capability of this, called the heap or free store, it is:
+- a separate area of memory
+- objects created there stick around until deliberately cleaned up
+- to create one, use new - which returns a pointer to the location
+- to clean up, use delete</p>
+
+<p>If you are going to be dynamically allocating things, either directly or indirectly you have to use new and pointers.</p>
+
+<hr />
+
+<p>Code Sample:</p>
+
+<p>&lsquo;&rsquo;&lsquo;cpp
+void f()
+{
+    int<em> p{new int{1}}; // allocate memory for an integer and return the pointer into p
+    </em>p = 2;
+    delete p;
+}</p>
+
+<hr />
+
+<p>Things that you create on the heap need to be deleted, once and only once.</p>
 </div>
 
 
@@ -113,15 +138,21 @@
   
 
 
-<time datetime="2015-01-12T20:52:32+13:00" pubdate data-updated="true"></time>
+<time datetime="2015-01-26T22:09:17+13:00" pubdate data-updated="true"></time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cpp/'>cpp</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections/" data-via="" data-counturl="http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://winstonmuller.github.io/blog/2015/01/26/dynamic-allocation/" data-via="" data-counturl="http://winstonmuller.github.io/blog/2015/01/26/dynamic-allocation/" >Tweet</a>
   
   
   
@@ -130,8 +161,10 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/01/24/what-is-a-compiler/" title="Previous Post: What is a Compiler?">&laquo; What is a Compiler?</a>
       
-        <a class="basic-alignment right" href="/blog/2015/01/24/what-is-a-compiler/" title="Next Post: What is a Compiler?">What is a Compiler? &raquo;</a>
+      
+        <a class="basic-alignment right" href="/blog/2015/01/27/why-do-pointers-have-types/" title="Next Post: Why do pointers have types?">Why do pointers have types? &raquo;</a>
       
     </p>
   </footer>

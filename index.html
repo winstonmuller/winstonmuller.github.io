@@ -9,7 +9,8 @@
   <meta name="author" content="Winston Muller">
 
   
-  <meta name="description" content="Usually, a program runs on the computer and takes data as its input, and returns data as output. For example, running a simple program to do addition &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -61,6 +62,108 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+  
+    
+      <h1 class="entry-title"><a href="/blog/2015/01/27/why-do-pointers-have-types/">Why Do Pointers Have Types?</a></h1>
+      
+      
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-27T06:00:18+13:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+  
+    
+      <h1 class="entry-title"><a href="/blog/2015/01/26/dynamic-allocation/">Dynamic Allocation</a></h1>
+      
+      
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-26T22:09:17+13:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Objects have scope, and go away when execution reaches the end of the scope.</p>
+
+<p>What if other code needed that object still? Like a UI element ( a window, an open file etc. we don&rsquo;t want it to go away).</p>
+
+<p>Cpp provides a capability of this, called the heap or free store, it is:
+- a separate area of memory
+- objects created there stick around until deliberately cleaned up
+- to create one, use new - which returns a pointer to the location
+- to clean up, use delete</p>
+
+<p>If you are going to be dynamically allocating things, either directly or indirectly you have to use new and pointers.</p>
+
+<hr />
+
+<p>Code Sample:</p>
+
+<p>&lsquo;&rsquo;&lsquo;cpp
+void f()
+{
+    int<em> p{new int{1}}; // allocate memory for an integer and return the pointer into p
+    </em>p = 2;
+    delete p;
+}</p>
+
+<hr />
+
+<p>Things that you create on the heap need to be deleted, once and only once.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -161,6 +264,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/01/27/why-do-pointers-have-types/">Why do pointers have types?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/01/26/dynamic-allocation/">Dynamic Allocation</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2015/01/24/what-is-a-compiler/">What is a Compiler?</a>
