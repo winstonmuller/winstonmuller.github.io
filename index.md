@@ -1,3 +1,3 @@
 # Hello
 
-If you want to get in touch, find me on Twitter: @winston_muller
+I like to write software and mess around with computers and technology. 
