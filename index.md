@@ -6,7 +6,7 @@
 Role: Senior Engineer
 
 ## OSPRI Limited (May 2019 - Oct 2020)
-Role: Sofware Development Manager
+Role: Software Development Manager
 
 ## Xero (May 2014 - March 2019)
 Role: People Lead (3 years)
