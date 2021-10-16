@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Winston Muller]]></title>
+  <link href="http://winstonmuller.github.io/atom.xml" rel="self"/>
+  <link href="http://winstonmuller.github.io/"/>
+  <updated>2015-01-28T23:03:17+13:00</updated>
+  <id>http://winstonmuller.github.io/</id>
+  <author>
+    <name><![CDATA[Winston Muller]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Why do pointers have types?]]></title>
+    <link href="http://winstonmuller.github.io/blog/2015/01/27/why-do-pointers-have-types/"/>
+    
+    <updated>2015-01-27T06:00:18+13:00</updated>
+    <id>http://winstonmuller.github.io/blog/2015/01/27/why-do-pointers-have-types</id>
+    
+    <content type="html"><![CDATA[
+]]></content>
+    
+  </entry>
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Dynamic Allocation]]></title>
+    <link href="http://winstonmuller.github.io/blog/2015/01/26/dynamic-allocation/"/>
+    
+    <updated>2015-01-26T22:09:17+13:00</updated>
+    <id>http://winstonmuller.github.io/blog/2015/01/26/dynamic-allocation</id>
+    
+    <content type="html"><![CDATA[<p>Objects have scope, and go away when execution reaches the end of the scope.</p>
+
+<p>What if other code needed that object still? Like a UI element ( a window, an open file etc. we don&rsquo;t want it to go away).</p>
+
+<p>Cpp provides a capability of this, called the heap or free store, it is:
+- a separate area of memory
+- objects created there stick around until deliberately cleaned up
+- to create one, use new - which returns a pointer to the location
+- to clean up, use delete</p>
+
+<p>If you are going to be dynamically allocating things, either directly or indirectly you have to use new and pointers.</p>
+
+<hr />
+
+<p>Code Sample:</p>
+
+<p>&lsquo;&rsquo;&lsquo;cpp
+void f()
+{
+    int<em> p{new int{1}}; // allocate memory for an integer and return the pointer into p
+    </em>p = 2;
+    delete p;
+}</p>
+
+<hr />
+
+<p>Things that you create on the heap need to be deleted, once and only once.</p>
+]]></content>
+    
+  </entry>
+  
+  <entry>
+    
+    <title type="html"><![CDATA[What is a Compiler?]]></title>
+    <link href="http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler/"/>
+    
+    <updated>2015-01-24T15:08:34+13:00</updated>
+    <id>http://winstonmuller.github.io/blog/2015/01/24/what-is-a-compiler</id>
+    
+    <content type="html"><![CDATA[<p>Usually, a program runs on the computer and takes data as its input, and returns data as output.</p>
+
+<p>For example, running a simple program to do addition, the input would be the two addends and the result would be the sum.</p>
+
+<h1>Compiler</h1>
+
+<p>A compiler is a peculiar program, in that the data is another program&rsquo;s source code. A compiler takes another program&rsquo;s source code as its input and returns an executable program as its output. In the case of a language such as Java which runs on the Java Virtual Machine, and not directly on the operating system itself, the output would be a form of bytecode.</p>
+
+<p>In the case of a language such as C++, the compiler usually takes the source code and returns the executable program itself, or object code. In this sense the word code is used to refer to a part of a program, not source code. However, there is still another step that takes place after this.</p>
+
+<h1>Linker</h1>
+
+<p>A program is almost always written on top of some sort of library. This library has some basic functionality such as input/output, the handling of streams, arrays etc. The object code for the program needs to be hooked up to this library code, otherwise it won&rsquo;t work at runtime. This is where the linker comes in. A linked combines the library object code with the object code from the compiled program.</p>
+]]></content>
+    
+  </entry>
+  
+  <entry>
+    
+    <title type="html"><![CDATA[.NET Collections]]></title>
+    <link href="http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections/"/>
+    
+    <updated>2015-01-12T20:52:32+13:00</updated>
+    <id>http://winstonmuller.github.io/blog/2015/01/12/dot-net-collections</id>
+    
+    <content type="html"><![CDATA[
+]]></content>
+    
+  </entry>
+  
+</feed>
