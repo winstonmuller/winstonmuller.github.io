@@ -21,13 +21,16 @@
 title: Winston Muller's Homepage
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Computer Programmer
+  Personal Blog and Webpage
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  winstonmuller
 
 # Build settings
+# theme: jekyll-theme-minimal
+#  jekyll-theme-minimal 0.2.0
+
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
