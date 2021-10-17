@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://winstonmuller.github.io/sitemap.xml 
